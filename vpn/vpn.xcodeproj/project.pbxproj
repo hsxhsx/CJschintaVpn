@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C199542227EE3BC00E5776F /* libSangforSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C19953D227EE3BC00E5776F /* libSangforSdk.a */; };
+		5C36221B227ED1900000EE25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C36221A227ED1900000EE25 /* AppDelegate.m */; };
+		5C36221E227ED1900000EE25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C36221D227ED1900000EE25 /* ViewController.m */; };
+		5C362221227ED1900000EE25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C36221F227ED1900000EE25 /* Main.storyboard */; };
+		5C362224227ED1910000EE25 /* vpn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C362222227ED1910000EE25 /* vpn.xcdatamodeld */; };
+		5C362226227ED1970000EE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C362225227ED1970000EE25 /* Assets.xcassets */; };
+		5C362229227ED1970000EE25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C362227227ED1970000EE25 /* LaunchScreen.storyboard */; };
+		5C36222C227ED1970000EE25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C36222B227ED1970000EE25 /* main.m */; };
+		5C36223C227ED22F0000EE25 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C36223B227ED22F0000EE25 /* NetworkExtension.framework */; };
+		5C36223F227ED2970000EE25 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C36223E227ED2970000EE25 /* MobileCoreServices.framework */; };
+		5C362241227ED2A70000EE25 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C362240227ED2A70000EE25 /* CoreTelephony.framework */; };
+		5C362243227ED2B50000EE25 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C362242227ED2B50000EE25 /* SystemConfiguration.framework */; };
+		5C362245227ED2C30000EE25 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C362244227ED2C30000EE25 /* AdSupport.framework */; };
+		5C362247227ED2D50000EE25 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C362246227ED2D50000EE25 /* libresolv.9.tbd */; };
+		5C362249227ED2E70000EE25 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C362248227ED2E70000EE25 /* libsqlite3.0.tbd */; };
+		5C36224B227ED2F50000EE25 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C36224A227ED2F50000EE25 /* libc++.tbd */; };
+		5C36224D227ED3040000EE25 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C36224C227ED3040000EE25 /* libxml2.tbd */; };
+		5C36224F227ED3170000EE25 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C36224E227ED3170000EE25 /* libicucore.tbd */; };
+		6A268C562284280E007DBAE5 /* JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A268C552284280E007DBAE5 /* JS.m */; };
+		6A268CFF2282A9BA00EBC0D9 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A268CFD2282A99C00EBC0D9 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A268D092282A9EA00EBC0D9 /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A268D012282A9EA00EBC0D9 /* NSString+Encrypt.m */; };
+		6A268D0A2282A9EA00EBC0D9 /* SxfvpnCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A268D022282A9EA00EBC0D9 /* SxfvpnCallback.m */; };
+		6A268D0B2282A9EA00EBC0D9 /* Sxfvpn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A268D072282A9EA00EBC0D9 /* Sxfvpn.m */; };
+		6A268D0C2282A9EA00EBC0D9 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A268D082282A9EA00EBC0D9 /* NSObject+Swizzling.m */; };
+		6A268D0F2282B0FD00EBC0D9 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A268D0E2282B0FC00EBC0D9 /* AuthViewController.m */; };
+		6A268D1E2282CCDC00EBC0D9 /* SxfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A268D1D2282CCDC00EBC0D9 /* SxfViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C362253227ED4020000EE25 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A268CFF2282A9BA00EBC0D9 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C19953D227EE3BC00E5776F /* libSangforSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSangforSdk.a; sourceTree = "<group>"; };
+		5C19953E227EE3BC00E5776F /* SangforAuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SangforAuthManager.h; sourceTree = "<group>"; };
+		5C19953F227EE3BC00E5776F /* SangforAuthHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SangforAuthHeader.h; sourceTree = "<group>"; };
+		5C199541227EE3BC00E5776F /* errheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errheader.h; sourceTree = "<group>"; };
+		5C362216227ED1900000EE25 /* vpn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vpn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C362219227ED1900000EE25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C36221A227ED1900000EE25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C36221C227ED1900000EE25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C36221D227ED1900000EE25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C362220227ED1900000EE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C362223227ED1910000EE25 /* vpn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vpn.xcdatamodel; sourceTree = "<group>"; };
+		5C362225227ED1970000EE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C362228227ED1970000EE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C36222A227ED1970000EE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C36222B227ED1970000EE25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C36223B227ED22F0000EE25 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		5C36223D227ED22F0000EE25 /* vpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vpn.entitlements; sourceTree = "<group>"; };
+		5C36223E227ED2970000EE25 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5C362240227ED2A70000EE25 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5C362242227ED2B50000EE25 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5C362244227ED2C30000EE25 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5C362246227ED2D50000EE25 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		5C362248227ED2E70000EE25 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5C36224A227ED2F50000EE25 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5C36224C227ED3040000EE25 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		5C36224E227ED3170000EE25 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		6A268C542284280E007DBAE5 /* JS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JS.h; sourceTree = "<group>"; };
+		6A268C552284280E007DBAE5 /* JS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JS.m; sourceTree = "<group>"; };
+		6A268CFD2282A99C00EBC0D9 /* PacketTunnel.appex */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.app-extension"; path = PacketTunnel.appex; sourceTree = "<group>"; };
+		6A268D012282A9EA00EBC0D9 /* NSString+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encrypt.m"; sourceTree = "<group>"; };
+		6A268D022282A9EA00EBC0D9 /* SxfvpnCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SxfvpnCallback.m; sourceTree = "<group>"; };
+		6A268D032282A9EA00EBC0D9 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		6A268D042282A9EA00EBC0D9 /* Sxfvpn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sxfvpn.h; sourceTree = "<group>"; };
+		6A268D052282A9EA00EBC0D9 /* NSString+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encrypt.h"; sourceTree = "<group>"; };
+		6A268D062282A9EA00EBC0D9 /* SxfvpnCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SxfvpnCallback.h; sourceTree = "<group>"; };
+		6A268D072282A9EA00EBC0D9 /* Sxfvpn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sxfvpn.m; sourceTree = "<group>"; };
+		6A268D082282A9EA00EBC0D9 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		6A268D0D2282B0FC00EBC0D9 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		6A268D0E2282B0FC00EBC0D9 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		6A268D1C2282CCDC00EBC0D9 /* SxfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SxfViewController.h; sourceTree = "<group>"; };
+		6A268D1D2282CCDC00EBC0D9 /* SxfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SxfViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C362213227ED1900000EE25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C36224F227ED3170000EE25 /* libicucore.tbd in Frameworks */,
+				5C36224D227ED3040000EE25 /* libxml2.tbd in Frameworks */,
+				5C36224B227ED2F50000EE25 /* libc++.tbd in Frameworks */,
+				5C362249227ED2E70000EE25 /* libsqlite3.0.tbd in Frameworks */,
+				5C362247227ED2D50000EE25 /* libresolv.9.tbd in Frameworks */,
+				5C362245227ED2C30000EE25 /* AdSupport.framework in Frameworks */,
+				5C362243227ED2B50000EE25 /* SystemConfiguration.framework in Frameworks */,
+				5C362241227ED2A70000EE25 /* CoreTelephony.framework in Frameworks */,
+				5C199542227EE3BC00E5776F /* libSangforSdk.a in Frameworks */,
+				5C36223F227ED2970000EE25 /* MobileCoreServices.framework in Frameworks */,
+				5C36223C227ED22F0000EE25 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C19953C227EE3BC00E5776F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5C19953D227EE3BC00E5776F /* libSangforSdk.a */,
+				5C19953E227EE3BC00E5776F /* SangforAuthManager.h */,
+				5C19953F227EE3BC00E5776F /* SangforAuthHeader.h */,
+				5C199541227EE3BC00E5776F /* errheader.h */,
+				6A268CFD2282A99C00EBC0D9 /* PacketTunnel.appex */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		5C36220D227ED1900000EE25 = {
+			isa = PBXGroup;
+			children = (
+				5C362218227ED1900000EE25 /* vpn */,
+				5C362217227ED1900000EE25 /* Products */,
+				5C36223A227ED22F0000EE25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C362217227ED1900000EE25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C362216227ED1900000EE25 /* vpn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C362218227ED1900000EE25 /* vpn */ = {
+			isa = PBXGroup;
+			children = (
+				6A268D002282A9EA00EBC0D9 /* NSVpn */,
+				5C19953C227EE3BC00E5776F /* libs */,
+				5C36223D227ED22F0000EE25 /* vpn.entitlements */,
+				5C362219227ED1900000EE25 /* AppDelegate.h */,
+				5C36221A227ED1900000EE25 /* AppDelegate.m */,
+				6A268D0D2282B0FC00EBC0D9 /* AuthViewController.h */,
+				6A268D0E2282B0FC00EBC0D9 /* AuthViewController.m */,
+				5C36221C227ED1900000EE25 /* ViewController.h */,
+				5C36221D227ED1900000EE25 /* ViewController.m */,
+				5C36221F227ED1900000EE25 /* Main.storyboard */,
+				5C362225227ED1970000EE25 /* Assets.xcassets */,
+				5C362227227ED1970000EE25 /* LaunchScreen.storyboard */,
+				5C36222A227ED1970000EE25 /* Info.plist */,
+				5C36222B227ED1970000EE25 /* main.m */,
+				5C362222227ED1910000EE25 /* vpn.xcdatamodeld */,
+			);
+			path = vpn;
+			sourceTree = "<group>";
+		};
+		5C36223A227ED22F0000EE25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C36224E227ED3170000EE25 /* libicucore.tbd */,
+				5C36224C227ED3040000EE25 /* libxml2.tbd */,
+				5C36224A227ED2F50000EE25 /* libc++.tbd */,
+				5C362248227ED2E70000EE25 /* libsqlite3.0.tbd */,
+				5C362246227ED2D50000EE25 /* libresolv.9.tbd */,
+				5C362244227ED2C30000EE25 /* AdSupport.framework */,
+				5C362242227ED2B50000EE25 /* SystemConfiguration.framework */,
+				5C362240227ED2A70000EE25 /* CoreTelephony.framework */,
+				5C36223E227ED2970000EE25 /* MobileCoreServices.framework */,
+				5C36223B227ED22F0000EE25 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A268D002282A9EA00EBC0D9 /* NSVpn */ = {
+			isa = PBXGroup;
+			children = (
+				6A268D012282A9EA00EBC0D9 /* NSString+Encrypt.m */,
+				6A268D022282A9EA00EBC0D9 /* SxfvpnCallback.m */,
+				6A268D032282A9EA00EBC0D9 /* NSObject+Swizzling.h */,
+				6A268D042282A9EA00EBC0D9 /* Sxfvpn.h */,
+				6A268D1C2282CCDC00EBC0D9 /* SxfViewController.h */,
+				6A268D1D2282CCDC00EBC0D9 /* SxfViewController.m */,
+				6A268D052282A9EA00EBC0D9 /* NSString+Encrypt.h */,
+				6A268D062282A9EA00EBC0D9 /* SxfvpnCallback.h */,
+				6A268D072282A9EA00EBC0D9 /* Sxfvpn.m */,
+				6A268D082282A9EA00EBC0D9 /* NSObject+Swizzling.m */,
+				6A268C542284280E007DBAE5 /* JS.h */,
+				6A268C552284280E007DBAE5 /* JS.m */,
+			);
+			path = NSVpn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C362215227ED1900000EE25 /* vpn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C36222F227ED1970000EE25 /* Build configuration list for PBXNativeTarget "vpn" */;
+			buildPhases = (
+				5C362212227ED1900000EE25 /* Sources */,
+				5C362213227ED1900000EE25 /* Frameworks */,
+				5C362214227ED1900000EE25 /* Resources */,
+				5C362253227ED4020000EE25 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vpn;
+			productName = vpn;
+			productReference = 5C362216227ED1900000EE25 /* vpn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C36220E227ED1900000EE25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = www.schinta.com.cn;
+				TargetAttributes = {
+					5C362215227ED1900000EE25 = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5C362211227ED1900000EE25 /* Build configuration list for PBXProject "vpn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C36220D227ED1900000EE25;
+			productRefGroup = 5C362217227ED1900000EE25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C362215227ED1900000EE25 /* vpn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C362214227ED1900000EE25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C362229227ED1970000EE25 /* LaunchScreen.storyboard in Resources */,
+				5C362226227ED1970000EE25 /* Assets.xcassets in Resources */,
+				5C362221227ED1900000EE25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C362212227ED1900000EE25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C36221E227ED1900000EE25 /* ViewController.m in Sources */,
+				5C362224227ED1910000EE25 /* vpn.xcdatamodeld in Sources */,
+				6A268D1E2282CCDC00EBC0D9 /* SxfViewController.m in Sources */,
+				6A268C562284280E007DBAE5 /* JS.m in Sources */,
+				5C36222C227ED1970000EE25 /* main.m in Sources */,
+				6A268D0C2282A9EA00EBC0D9 /* NSObject+Swizzling.m in Sources */,
+				6A268D0F2282B0FD00EBC0D9 /* AuthViewController.m in Sources */,
+				6A268D0A2282A9EA00EBC0D9 /* SxfvpnCallback.m in Sources */,
+				6A268D092282A9EA00EBC0D9 /* NSString+Encrypt.m in Sources */,
+				6A268D0B2282A9EA00EBC0D9 /* Sxfvpn.m in Sources */,
+				5C36221B227ED1900000EE25 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C36221F227ED1900000EE25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C362220227ED1900000EE25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C362227227ED1970000EE25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C362228227ED1970000EE25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C36222D227ED1970000EE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C36222E227ED1970000EE25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C362230227ED1970000EE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = vpn/vpn.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZ22LFM7LZ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = vpn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vpn/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = cqzhsl.schinta.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C362231227ED1970000EE25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = vpn/vpn.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZ22LFM7LZ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = vpn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vpn/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = cqzhsl.schinta.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C362211227ED1900000EE25 /* Build configuration list for PBXProject "vpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C36222D227ED1970000EE25 /* Debug */,
+				5C36222E227ED1970000EE25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C36222F227ED1970000EE25 /* Build configuration list for PBXNativeTarget "vpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C362230227ED1970000EE25 /* Debug */,
+				5C362231227ED1970000EE25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5C362222227ED1910000EE25 /* vpn.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C362223227ED1910000EE25 /* vpn.xcdatamodel */,
+			);
+			currentVersion = 5C362223227ED1910000EE25 /* vpn.xcdatamodel */;
+			path = vpn.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5C36220E227ED1900000EE25 /* Project object */;
+}
