@@ -69,7 +69,7 @@
     
 }
 - (instancetype)init:(UIViewController *)rootController claaBack:(SxfvpnCallback *)sxfvpnCallback app:(UIApplication *)app{
-    self.rootController = rootController;
+    self = (SxfViewController *)rootController;
     self.app = app;
     _sxfvpnCallback = sxfvpnCallback;
     [self initSangforSdk];

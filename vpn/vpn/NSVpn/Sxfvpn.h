@@ -5,7 +5,7 @@
 //  Created by MacDev02 on 2019/5/6.
 //  Copyright © 2019年 sangfor. All rights reserved.
 //
-
+#import <UIKit/UIKit.h>
 #import "NSString+Encrypt.h"
 #import "SxfvpnCallback.h"
 #import "Sxfvpn.h"
@@ -28,7 +28,8 @@ typedef enum{
     AUTH_TYPE_RENEW_PASSWORD = 18,
     AUTH_TYPE_RENEW_PASSWORD_WITH_OLDPASSWORD = 20
 } SxfvpnSdkMode;
-- (instancetype)init:(SxfvpnCallback *)sxfvpnCallback;
+- (instancetype)init:(UIApplication *)application activity:(UIViewController *)activity callback:(SxfvpnCallback *)sxfvpnCallback;
+- (instancetype)init:(SxfvpnCallback *)sxfvpnCallback ;
 - (BOOL)startVPNInitAndLogin:(NSString *)ip name:(NSString *)name passwd:(NSString *)passwd;
 - (void)sendConnectState;
 - (void)loginByPasswd:(NSString *)user passwd:(NSString *)passwd;

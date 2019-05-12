@@ -5,6 +5,7 @@
 //  Created by MacDev02 on 2019/5/6.
 //  Copyright © 2019年 sangfor. All rights reserved.
 //
+#import <UIKit/UIKit.h>
 #import "SxfvpnCallback.h"
 #import "Sxfvpn.h"
 #import "SangforAuthManager.h"
@@ -22,9 +23,26 @@
 @property (nonatomic, assign)   int             vpnConnect;
 @property (nonatomic, retain)   SxfvpnCallback             *sxfvpnCallback;
 
+@property (nonatomic, retain) UIApplication *application;
+@property (nonatomic, retain) UIViewController *activity;
+
+
 
 @end
 @implementation Sxfvpn
+- (instancetype)init:(UIApplication *)application activity:(UIViewController *)activity callback:(SxfvpnCallback *)sxfvpnCallback{
+    self = [super init];
+    if(self){
+        _sxfvpnCallback = sxfvpnCallback;
+        _vpnState = 0;
+        _vpnConnect = 0;
+        _activity = activity;
+        _application = application;
+        [self initSangforSdk];
+    }
+    return self;
+    
+}
 - (instancetype)init:(SxfvpnCallback *)sxfvpnCallback{
     self = [super init];
     if(self){

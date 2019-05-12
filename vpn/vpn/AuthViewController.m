@@ -6,8 +6,8 @@
 //  Copyright © 2017年 sangfor. All rights reserved.
 //
 //#import "SxfViewController.h"
-//#import "SxfvpnCallback.h"
-//#import "Sxfvpn.h"
+#import "SxfvpnCallback.h"
+#import "Sxfvpn.h"
 #import "AuthViewController.h"
 //#import "DLRadioButton.h"
 //#import "SDAutoLayout.h"
@@ -19,7 +19,7 @@
 //#import "MBProgressHUD.h"
 //#import "SmsAlertView.h"
 //#import "errheader.h"
-
+#import "SxfViewController.h"
 #define kVpnIp      @"vpnIp"       //VPN地址
 #define kPort       @"vpnport"     //VPN端口号
 #define kVpnModel   @"vpnModel"     //VPN模式
@@ -84,8 +84,7 @@
 
 #pragma mark - 生命周期
 - (void)viewWillAppear:(BOOL)animated{
-//    SxfvpnCallback *callback = [SxfvpnCallback new];
-//    xxViewController *xx = [[xxViewController alloc] init:self claaBack:callback app:[UIApplication sharedApplication]];
+
 }
 - (void)viewDidLoad
 {
@@ -95,7 +94,9 @@
 //    [sxfvpn initSangforSdk];
 //  BOOL ij  =  [sxfvpn startVPNInitAndLogin:@"https://222.180.194.114:443" name:@"cjkcliukang" passwd:@"5c7mq&68"];
 //    //初始化Sdk信息
-    [self initSangforSdk];
+//    [self initSangforSdk];
+      SxfvpnCallback *callback = [SxfvpnCallback new];
+//      SxfViewController *xx = [[SxfViewController alloc] init:self claaBack:callback app:[UIApplication sharedApplication]];
 //    [self.view addSubview:xx.view];
 //
 //    //创建点击收起键盘事件
